@@ -153,9 +153,9 @@
       --radius-md: 10px;
       --radius-lg: 14px;
       --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      --content-width: 820px;
-      --sidebar-width: 320px;
-      --max-width: 1240px;
+      --content-width: 880px;
+      --sidebar-width: 300px;
+      --max-width: 1280px;
       --transition: all 0.25s ease;
     }
 
@@ -891,22 +891,25 @@
       top: 90px;
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 20px;
+      max-height: calc(100vh - 110px);
+      padding-bottom: 20px;
     }
 
     /* ===== Sidebar Widget ===== */
     .sidebar-widget {
       background: var(--color-bg);
       border-radius: var(--radius-md);
-      padding: 24px;
+      padding: 20px;
       border: 1px solid var(--color-border);
       box-shadow: var(--shadow-sm);
+      flex-shrink: 0;
     }
 
     .sidebar-widget h3 {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 600;
-      margin: 0 0 16px 0;
+      margin: 0 0 14px 0;
       color: var(--color-text);
       display: flex;
       align-items: center;
@@ -922,8 +925,8 @@
     /* ===== Related Articles ===== */
     .related-article {
       display: flex;
-      gap: 14px;
-      padding: 14px 0;
+      gap: 12px;
+      padding: 12px 0;
       border-bottom: 1px solid var(--color-border);
       text-decoration: none;
       transition: var(--transition);
@@ -943,8 +946,8 @@
     }
 
     .related-article-img {
-      width: 72px;
-      height: 72px;
+      width: 60px;
+      height: 60px;
       border-radius: var(--radius-sm);
       background: var(--color-primary-light);
       flex-shrink: 0;
@@ -955,8 +958,8 @@
     }
 
     .related-article-img svg {
-      width: 28px;
-      height: 28px;
+      width: 24px;
+      height: 24px;
       color: var(--color-primary);
       opacity: 0.5;
     }
@@ -967,11 +970,11 @@
     }
 
     .related-article-title {
-      font-size: 14px;
+      font-size: 13px;
       font-weight: 600;
       color: var(--color-text);
-      margin-bottom: 4px;
-      line-height: 1.4;
+      margin-bottom: 3px;
+      line-height: 1.35;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
@@ -979,13 +982,13 @@
     }
 
     .related-article-meta {
-      font-size: 12px;
+      font-size: 11px;
       color: var(--color-text-secondary);
     }
 
     /* ===== Mini TOC in Sidebar ===== */
     .mini-toc {
-      max-height: 400px;
+      max-height: 280px;
       overflow-y: auto;
     }
 
@@ -1005,10 +1008,10 @@
 
     .mini-toc a {
       display: block;
-      font-size: 13px;
+      font-size: 12px;
       color: var(--color-text-secondary);
       text-decoration: none;
-      padding: 6px 0 6px 12px;
+      padding: 5px 0 5px 10px;
       border-left: 2px solid var(--color-border);
       transition: var(--transition);
     }
